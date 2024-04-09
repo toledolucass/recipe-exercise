@@ -17,10 +17,9 @@ body{
 }
 
 section{
-     max-width: 35%;
-     margin: 0 auto;
+     max-width: 30%;
+     margin: 3em auto;
      background-color: #fff;
-     margin-top: 3em;
      padding: 2em;
      border-radius: 20px;
 }
@@ -38,7 +37,7 @@ h1{
      font-size: 1.8rem;
 }
 
-.description{
+p{
      font-family: var(--main-font);
      color: var(--font-color);
      font-size: .8rem;
@@ -79,35 +78,55 @@ span{
 }
 
 #ingredients_container{
-     padding-bottom: 1.5em;
-     border-bottom: 1px solid rgb(184, 184, 184);
+     margin-bottom: 1em;
 }
 
 h2{
      font-family: var(--title-font);
      font-weight: 500;
      color: var(--primary-color);
-     margin-top: 1em;
+     margin-top: 1rem;
 }
 
 .ingredients_list{
      margin-top: 1em;
 }
 
+#instructions_container{
+     border-top: 1px solid rgb(221, 221, 221);
+     border-bottom: 1px solid rgb(221, 221, 221);
+}
+
 .instructions_list{
      list-style: none;
      margin-top: 1em;
-     counter-reset: my-counter;
 }
 
 .instructions_itens{
-     padding-bottom: 1em;
-     counter-increment: my-counter;
+     display: flex;
+     margin: 0 0 1rem 1rem;
 }
 
-.instructions_itens::before{
-     content: counter(my-counter) ".";
-     color: var(--secondary-color);
+.numeric_markers{
+     margin-right: 1em;
+}
+
+table, tr{
+     border-collapse: collapse;
+     width: 100%;
+     border-bottom: 1px solid rgb(221, 221, 221);
+     font-family: var(--main-font);
+     font-size: .9em;
+     line-height: 2;
+}
+
+td{
+     display: inline-block;
+     width: 50%;
+     padding-left: 1.7em;
+}
+
+.values{
+     color: var(--primary-color);
      font-weight: bold;
-     margin: 0 1em 0 1em;
 }
