@@ -17,7 +17,7 @@ body{
 }
 
 section{
-     max-width: 30%;
+     max-width: 35%;
      margin: 0 auto;
      background-color: #fff;
      margin-top: 3em;
@@ -45,11 +45,12 @@ h1{
      margin: .8em 0;
 }
 
-#preparation-container{
+#preparation_container{
      background-color: hsl(330, 100%, 97%);
      padding: 1em;
      border-radius: 10px;
      line-height: 1.8;
+     margin-top: 1em;
 }
 
 span{
@@ -58,31 +59,55 @@ span{
      font-weight: 600;
 }
 
-.ul-list{
+.lists{
      font-family: var(--main-font);
      color: var(--font-color);
      font-size: .8rem;
-     list-style: none;
-     padding-left: 0
+     padding-left: 0;
+}
+
+.itens{
+     display: flex;
+     align-items: center;
 }
 
 .itens::before{
      content: "\2022";
      color: var(--secondary-color);
-     font-size: 1rem;
+     font-size: 1.3rem;
      margin: 0 1.3em 0 .3em;
 }
 
-#ingredients-container{
-     margin: 2em 0;
+#ingredients_container{
+     padding-bottom: 1.5em;
+     border-bottom: 1px solid rgb(184, 184, 184);
 }
 
 h2{
      font-family: var(--title-font);
      font-weight: 500;
      color: var(--primary-color);
+     margin-top: 1em;
 }
 
-.ingredients-list{
-     margin-top: .8em;
+.ingredients_list{
+     margin-top: 1em;
+}
+
+.instructions_list{
+     list-style: none;
+     margin-top: 1em;
+     counter-reset: my-counter;
+}
+
+.instructions_itens{
+     padding-bottom: 1em;
+     counter-increment: my-counter;
+}
+
+.instructions_itens::before{
+     content: counter(my-counter) ".";
+     color: var(--secondary-color);
+     font-weight: bold;
+     margin: 0 1em 0 1em;
 }
