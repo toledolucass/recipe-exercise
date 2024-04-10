@@ -18,7 +18,7 @@ body{
 }
 
 section{
-     max-width: 30%;
+     width: 30%;
      margin: 3em auto;
      background-color: #fff;
      padding: 2em;
@@ -26,19 +26,19 @@ section{
 }
 
 section #omelette{
-     max-width: 100%;
+     width: 100%;
      border-radius: 10px;
      margin-bottom: 2em;
 }
 
-h1{
+section h1{
      font-family: var(--title-font);
      font-weight: 600;
      color: var(--font-color);
      font-size: 1.8rem;
 }
 
-p{
+section p{
      font-family: var(--main-font);
      color: var(--font-color);
      font-size: .8rem;
@@ -53,7 +53,7 @@ p{
      margin-top: 1em;
 }
 
-span{
+#preparation_container span{
      color: var(--secondary-color);
      font-family: var(--main-font);
      font-weight: 600;
